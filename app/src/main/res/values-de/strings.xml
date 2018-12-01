@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="add">Neue hinzufügen </string>
+    <string name="titlehint">Titel eingeben</string>
+    <string name="des">Geben Sie eine Beschreibung der Notiz ein</string>
+</resources>

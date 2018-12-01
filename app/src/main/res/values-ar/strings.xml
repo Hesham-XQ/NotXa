@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="add">اضافة </string>
+    <string name="titlehint">ادخل العنوان</string>
+    <string name="des">ادخل التفاصيل</string>
+</resources>
