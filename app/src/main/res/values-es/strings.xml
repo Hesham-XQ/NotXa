@@ -3,4 +3,9 @@
     <string name="add">añadir nuevo</string>
     <string name="titlehint">ingresar título</string>
     <string name="des">introduzca la descripción de la nota</string>
+    <string name="yes">sí</string>
+    <string name="no">No</string>
+    <string name="exit">¿Seguro que quieres salir?</string>
+    <string name="delete">¿Estás seguro que quieres eliminar esta nota?</string>
+
 </resources>

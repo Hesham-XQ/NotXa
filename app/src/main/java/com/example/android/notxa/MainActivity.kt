@@ -1,7 +1,9 @@
 package com.example.android.notxa
 
+import android.app.AlertDialog
 import android.app.SearchManager
 import android.content.Context
+import android.content.DialogInterface
 import android.content.Intent
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
@@ -35,6 +37,19 @@ class MainActivity : AppCompatActivity() {
 
 
     }
+
+
+// making alert dialog when we press back button
+        override fun onBackPressed() {
+            AlertDialog.Builder(this)
+                    .setMessage(R.string.exit)
+                    .setCancelable(false)
+                    .setPositiveButton(R.string.yes) { dialog, id -> this@MainActivity.finish() }
+                    .setNegativeButton(R.string.no, null)
+                    .show()
+        }
+
+
 
     override  fun onResume() {
         super.onResume()
@@ -148,10 +163,18 @@ class MainActivity : AppCompatActivity() {
             myView.tvTitle.text=myNote.nodeName
             myView.tvDes.text=myNote.nodeDes
             myView.ivDelete.setOnClickListener( View.OnClickListener {
-                var dbManager=DbManager(this.context!!)
-                val selectionArgs= arrayOf(myNote.nodeID.toString())
-                dbManager.Delete("ID=?",selectionArgs)
-                LoadQuery("%")
+                AlertDialog.Builder(this@MainActivity)
+                        .setMessage(R.string.delete)
+                        .setCancelable(false)
+                        .setPositiveButton(R.string.yes) { dialog, id ->
+                            var dbManager=DbManager(this.context!!)
+                            val selectionArgs= arrayOf(myNote.nodeID.toString())
+                            dbManager.Delete("ID=?",selectionArgs)
+                            LoadQuery("%")
+                        }
+
+                        .setNegativeButton(R.string.no, null)
+                        .show()
             })
             myView.ivEdit.setOnClickListener( View.OnClickListener{
 

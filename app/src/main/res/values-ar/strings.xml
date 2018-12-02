@@ -3,4 +3,8 @@
     <string name="add">اضافة </string>
     <string name="titlehint">ادخل العنوان</string>
     <string name="des">ادخل التفاصيل</string>
+    <string name="yes">نعم</string>
+    <string name="no">لا</string>
+    <string name="exit">هل تريد الخروج؟</string>
+    <string name="delete">هل تريد حذف المفكرة؟</string>
 </resources>

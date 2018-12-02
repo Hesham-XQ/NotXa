@@ -3,4 +3,8 @@
     <string name="add">Neue hinzufügen </string>
     <string name="titlehint">Titel eingeben</string>
     <string name="des">Geben Sie eine Beschreibung der Notiz ein</string>
+    <string name="yes">Ja</string>
+    <string name="no">Nein</string>
+    <string name="exit">Sie sind sicher, dass Sie beenden wollen?</string>
+    <string name="delete">Möchten Sie diese Notiz wirklich löschen?</string>
 </resources>
